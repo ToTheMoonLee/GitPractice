@@ -1,3 +1,8 @@
 git log 查看git提交版本
 git reflog 查看git命令历史
 git reset --hard commit_id git版本回退 commit_id需要输入对应的id，可以通过git reflog查看
+
+.git 是一个版本库，在版本库中有一个叫stage的暂存区，同时git会自动创建一个master分支，并且会有一个HEAD指针指向最新的提交版本
+git add 相当于把修改提交到暂存区
+git commit 相当于把暂存区中的修改提交到分支上，master分支
+
