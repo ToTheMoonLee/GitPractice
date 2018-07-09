@@ -9,3 +9,8 @@ git commit 相当于把暂存区中的修改提交到分支上，master分支
 git commit 只会提交在暂存区中的文件修改
 git 追踪的是修改，而非文件
 
+git回退：
+1. 修改还没有执行git add，想要清空工作区的命令，则执行git checkout -- filename 此时会将工作区的修改清空
+2. 修改执行了git add,则此时需要首先执行 git reset HEAD filename,然后再执行步骤1
+3. 如果此时执行了git commit，则可以使用版本回退，git reset --hard commit_id
+
