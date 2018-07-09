@@ -14,3 +14,8 @@ git回退：
 2. 修改执行了git add,则此时需要首先执行 git reset HEAD filename,然后再执行步骤1
 3. 如果此时执行了git commit，则可以使用版本回退，git reset --hard commit_id
 
+git远程仓库:
+git支持SSH协议，需要生成SSH Key并告知远程仓库才能进行正确的代码提交，对远程仓库的操作如下：
+1. ssh-keygen -t rsa -C "youremail@example.com" 执行这个指令，使用默认配置即可，生成的key在个人文件夹的.ssh文件夹中
+2. 将id_rsa.pub中的公钥内容提交到远程仓库,Add Key即可
+ 
