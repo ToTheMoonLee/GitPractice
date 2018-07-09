@@ -1,0 +1,3 @@
+git log 查看git提交版本
+git reflog 查看git命令历史
+git reset --hard commit_id git版本回退 commit_id需要输入对应的id，可以通过git reflog查看
