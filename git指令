@@ -70,6 +70,22 @@ git feature分支管理
 2. 如果要强行删除一个分支，则执行 git branch -D <name>
 git branch -D <name> 大写的D强制删除
 
+git 远程仓库
+1. 初次clone远程仓库时，Git会自动的将本地的master分支与远程的master分支对应起来，并且默认远程分支的名字为origin
+2. 可以自己决定是否将本地的其他分支推送至远程：
+    1> master分支要时刻与远程同步
+    2> dev分支是开发分支，团队所有成员都在上面工作，所以也需要与远程同步
+    3> bug分支用于修复bug，根据需要决定
+    4> feature分支是否要提交到远程，取决于是否协同开发该功能
+git remote 查看远程仓库名字
+git remote -v 查看远程仓库详细信息
+git push origin master 将本地master分支内容提交到远程master
+git pull 抓去远程最新提交
+git checkout -b branch_name origin/branch_name 建立本地分支与远程分支链接
+git branch --set-upstream branch_name origin/branch_name 将本地分支与远程分支关联
+如果有冲突，则需要先git pull 然后解决冲突后再提交
+
+
 
 
 
