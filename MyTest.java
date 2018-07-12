@@ -8,3 +8,5 @@ this is branch 1
 this is branch 2
 
 test --on--ff 模式
+
+test bug 
