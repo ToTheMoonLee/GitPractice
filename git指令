@@ -56,6 +56,20 @@ git分支管理
 3. 禁用Fast forward模式方式为 --no--ff
 4. 实际开发中，一般master分支是非常稳定的，仅用于发布版本，平时一般在dev分支上进行开发，每个人在开发时都有自己的分支，然后将给自的代码时不时的提交到dev分支上，并最终会合并到master分支上
 
+git bug分支管理
+1. 当在dev分支开发时，只要没有commit，则此时工作区的内容跟暂存区的内容是在各个分支共用的，所以此时如果有bug需要在master分支修改，则需要先执行stash将修改的未commit的内容保存起来，然后当修改完bug之后，执行git stash pop将修改弹出继续工作
+2. 几个指令：
+git stash 保存现在的修改
+git stash list 查看stash的保存的修改
+git stash pop 将stash list中的修改弹出，并删除保存的修改
+git stash apply 恢复，但是不删除
+git stash drop 删除stash内容
+
+git feature分支管理
+1. 开发一个新需求，最好是在一个新分支上进行，新建一个feature分支
+2. 如果要强行删除一个分支，则执行 git branch -D <name>
+git branch -D <name> 大写的D强制删除
+
 
 
 
