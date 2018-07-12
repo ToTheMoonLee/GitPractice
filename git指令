@@ -40,8 +40,18 @@ Git支持分支创建和切换，在自己的分支上进行开发工作，而�
 合并某分支到当前分支： git merge <name>
 删除分支： git branch -d <name>
 
+git merge解决冲突
+1. git merge <name> 可能出现冲突，冲突会以：
+<<<<<<< HEAD
+xxxxxxx
+========
+xxxxxxxxx
+>>>>>>> <branch_name>
+的形式显示，此时只需要解决冲突，并再次进行提交即可
+2. git log --graph 可以查看分支合并图
 
-
+git分支管理
+1. git在合并分支时，会用到Fast forward模式，这种模式相当于将当前分支的指针直接指向了要合并的分支的指针
 
 
 
