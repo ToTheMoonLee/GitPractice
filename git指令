@@ -25,4 +25,32 @@ git初始化远程仓库：
 git remote add origin https://github.com/ToTheMoonLee/GitPractice.git
 git push -u origin master
 
+git从远程仓库克隆
+1. 执行 git clone https://github.com/ToTheMoonLee/GitPractice.git 指令
+https://github.com/ToTheMoonLee/GitPractice.git 即为自己的远程仓库地址
+2. git支持多种协议，包括https、ssh等，ssh协议速度最快
+
+git创建、切换、合并分支
+Git支持分支创建和切换，在自己的分支上进行开发工作，而不用担心影响到主干分支的内容
+指令：
+查看分支： git branch  带*号的表示当前分支
+创建分支： git branch <name>
+切换分支： git checkout <name>
+创建并切换分支： git checkout -b <name>
+合并某分支到当前分支： git merge <name>
+删除分支： git branch -d <name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
